@@ -27,7 +27,7 @@ def get_drop_point(filename):
 
     for item in column:
         ans_df[item] = ans_dic[item]
-    ans_df.to_excel(f'drop_point_results\\{hour}_drop_point.xlsx')
+    ans_df.to_csv(f'drop_point_results\\{hour}_drop_point.csv')
     print(f"{hour} finished")
 
 
